@@ -43,7 +43,6 @@ class _AmountCardSectionState extends State<AmountCardSection>
               margin: const EdgeInsets.all(15),
               height: 150,
               decoration: const BoxDecoration(
-                  color: Colors.green,
                   borderRadius: BorderRadius.only(
                     topLeft: Radius.elliptical(250, 18),
                     topRight: Radius.elliptical(250, 18),
@@ -62,7 +61,7 @@ class _AmountCardSectionState extends State<AmountCardSection>
                     top: 20,
                     left: 20,
                     child: Text(
-                      "2.70% Today,",
+                      "8.70% Today,",
                       style: TextStyle(
                         color: ColorsManager.white,
                         fontSize: 16,
@@ -73,7 +72,7 @@ class _AmountCardSectionState extends State<AmountCardSection>
                     top: 40,
                     left: 20,
                     child: Text(
-                      "\$12,670.90",
+                      "\$400,670.90",
                       style: TextStyle(
                         color: ColorsManager.white,
                         fontSize: 36,

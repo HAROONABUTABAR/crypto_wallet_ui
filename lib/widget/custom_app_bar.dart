@@ -18,14 +18,14 @@ class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Text(
-                "Hello Haroon",
+                "Hello Dev",
                 style: TextStyle(
                   color: ColorsManager.pink,
                   fontSize: 24,
                 ),
               ),
               Text(
-                "Welcome Back!",
+                "Welcome Back",
                 style: TextStyle(
                   color: ColorsManager.black,
                   fontSize: 32,

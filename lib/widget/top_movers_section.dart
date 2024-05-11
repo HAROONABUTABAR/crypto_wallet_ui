@@ -43,7 +43,7 @@ class TopMoversSection extends StatelessWidget {
                         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                         children: [
                           Text(
-                            "+34.98%",
+                            "+64.98%",
                             style: TextStyle(
                               color: ColorsManager.black,
                               fontSize: 16,
@@ -51,7 +51,7 @@ class TopMoversSection extends StatelessWidget {
                             ),
                           ),
                           Text(
-                            "BTC \$21.58",
+                            "BTC \$60.58",
                             style: TextStyle(
                               color: ColorsManager.black,
                               fontSize: 16,
@@ -82,7 +82,7 @@ class TopMoversSection extends StatelessWidget {
                           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                           children: [
                             Text(
-                              "+34.98%",
+                              "+20.98%",
                               style: TextStyle(
                                 color: ColorsManager.black,
                                 fontSize: 16,
@@ -90,7 +90,7 @@ class TopMoversSection extends StatelessWidget {
                               ),
                             ),
                             Text(
-                              "BTC \$21.58",
+                              "BTC \$10.58",
                               style: TextStyle(
                                 color: ColorsManager.black,
                                 fontSize: 16,
