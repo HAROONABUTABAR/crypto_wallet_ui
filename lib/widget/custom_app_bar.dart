@@ -1,3 +1,4 @@
+import 'package:crypto_wallet/constants/app_assets.dart';
 import 'package:crypto_wallet/constants/font_helper.dart';
 import 'package:flutter/material.dart';
 
@@ -40,7 +41,7 @@ class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
               borderRadius: BorderRadius.circular(5),
               color: ColorsManager.lightGrey,
             ),
-            child: Image.asset("assets/icon_notifications.png"),
+            child: Image.asset(AppAssets.iconNotifications),
           ),
         ],
       ),

@@ -1,3 +1,4 @@
+import 'package:crypto_wallet/constants/app_assets.dart';
 import 'package:crypto_wallet/constants/font_helper.dart';
 import 'package:flutter/material.dart';
 import 'package:lottie/lottie.dart';
@@ -86,7 +87,7 @@ class _AmountCardSectionState extends State<AmountCardSection>
             bottom: -5,
             right: -70,
             child: Lottie.asset(
-              "assets/coin_stack.json",
+              AppAssets.coinStack,
               width: 250,
               height: 150,
               onLoaded: (composition) {
@@ -103,7 +104,7 @@ class _AmountCardSectionState extends State<AmountCardSection>
               shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(100)),
               backgroundColor: ColorsManager.darkPink,
-              child: Image.asset("assets/plus_icon.png"),
+              child: Image.asset(AppAssets.plusIcon),
             ),
           ),
         ],

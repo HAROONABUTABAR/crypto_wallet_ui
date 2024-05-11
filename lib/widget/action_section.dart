@@ -1,3 +1,4 @@
+import 'package:crypto_wallet/constants/app_assets.dart';
 import 'package:crypto_wallet/constants/font_helper.dart';
 import 'package:flutter/material.dart';
 
@@ -56,14 +57,14 @@ class ActionSection extends StatelessWidget {
                             "Receive",
                             style: FontHelper.font20BoldWhite,
                           ),
-                          Image.asset("assets/arrow_icon.png")
+                          Image.asset(AppAssets.iconArrow)
                         ],
                       ),
                     ),
                     Positioned(
                       right: 0,
                       top: 5,
-                      child: Image.asset("assets/hands.png"),
+                      child: Image.asset(AppAssets.iconHands),
                     )
                   ],
                 ),
@@ -101,14 +102,14 @@ class ActionSection extends StatelessWidget {
                             "Receive",
                             style: FontHelper.font20BoldWhite,
                           ),
-                          Image.asset("assets/arrow_icon.png")
+                          Image.asset(AppAssets.iconArrow)
                         ],
                       ),
                     ),
                     Positioned(
                       right: 0,
                       top: 5,
-                      child: Image.asset("assets/pocket.png"),
+                      child: Image.asset(AppAssets.iconPocket),
                     )
                   ],
                 ),

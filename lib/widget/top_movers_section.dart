@@ -1,3 +1,4 @@
+import 'package:crypto_wallet/constants/app_assets.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
@@ -62,8 +63,11 @@ class TopMoversSection extends StatelessWidget {
                         ],
                       ),
                       Align(
-                          alignment: Alignment.bottomRight,
-                          child: Image.asset("assets/purple_graph.png"))
+                        alignment: Alignment.bottomRight,
+                        child: Image.asset(
+                          AppAssets.iconPurpleGraph,
+                        ),
+                      )
                     ],
                   ),
                 ),
@@ -101,8 +105,11 @@ class TopMoversSection extends StatelessWidget {
                           ],
                         ),
                         Align(
-                            alignment: Alignment.bottomRight,
-                            child: Image.asset("assets/pink_graph.png"))
+                          alignment: Alignment.bottomRight,
+                          child: Image.asset(
+                            AppAssets.iconPinkGraph,
+                          ),
+                        )
                       ],
                     )),
               ],

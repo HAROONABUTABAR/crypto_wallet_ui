@@ -1,3 +1,4 @@
+import 'package:crypto_wallet/constants/app_assets.dart';
 import 'package:crypto_wallet/constants/constants.dart';
 import 'package:crypto_wallet/widget/action_section.dart';
 import 'package:crypto_wallet/widget/custom_app_bar.dart';
@@ -62,13 +63,21 @@ class _MyHomePageState extends State<MyHomePage> {
         backgroundColor: ColorsManager.white,
         color: ColorsManager.darkPurple,
         items: [
-          Image.asset("assets/Home.png"),
-          Image.asset("assets/wallet.png"),
+          Image.asset(
+            AppAssets.iconHomme,
+          ),
+          Image.asset(
+            AppAssets.iconWallet,
+          ),
           const SizedBox(
             child: Text(""),
           ),
-          Image.asset("assets/market.png"),
-          Image.asset("assets/setting.png"),
+          Image.asset(
+            AppAssets.iconMarket,
+          ),
+          Image.asset(
+            AppAssets.iconSetting,
+          ),
         ],
         index: currentPageIndex,
         letIndexChange: (index) => true,
@@ -88,7 +97,9 @@ class _MyHomePageState extends State<MyHomePage> {
             navBarState?.setPage(2);
           },
           backgroundColor: ColorsManager.mediumPurple,
-          child: Image.asset("assets/swap-fill.png"),
+          child: Image.asset(
+            AppAssets.iconSwapFill,
+          ),
         ),
       ),
       floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
