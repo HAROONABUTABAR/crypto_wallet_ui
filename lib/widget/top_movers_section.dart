@@ -4,8 +4,8 @@ import 'package:flutter/widgets.dart';
 
 import '../constants/constants.dart';
 
-class TopMoversSectionWidget extends StatelessWidget {
-  const TopMoversSectionWidget({super.key});
+class TopMoversSection extends StatelessWidget {
+  const TopMoversSection({super.key});
 
   @override
   Widget build(BuildContext context) {

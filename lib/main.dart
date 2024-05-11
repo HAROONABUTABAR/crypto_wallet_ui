@@ -1,7 +1,7 @@
 import 'package:crypto_wallet/constants/constants.dart';
 import 'package:crypto_wallet/widget/action_section.dart';
 import 'package:crypto_wallet/widget/custom_app_bar.dart';
-import 'package:crypto_wallet/widget/amount_card.dart';
+import 'package:crypto_wallet/widget/amount_card_section.dart';
 import 'package:crypto_wallet/widget/top_movers_section.dart';
 import 'package:flutter/material.dart';
 
@@ -14,7 +14,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Demo',
+      title: 'Crypto Wallet',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
@@ -44,11 +44,11 @@ class _MyHomePageState extends State<MyHomePage> {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               // Amount  Card Section
-              AmountCardWidget(),
+              AmountCardSection(),
               // Action Section
-              ActionSectionWdiget(),
+              ActionSection(),
               // Top Movers Section
-              TopMoversSectionWidget(),
+              TopMoversSection(),
             ],
           ),
         ),

@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 
 import '../constants/constants.dart';
 
-class AmountCardWidget extends StatelessWidget {
-  const AmountCardWidget({super.key});
+class AmountCardSection extends StatelessWidget {
+  const AmountCardSection({super.key});
 
   @override
   Widget build(BuildContext context) {
