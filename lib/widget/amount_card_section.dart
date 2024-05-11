@@ -1,9 +1,30 @@
 import 'package:flutter/material.dart';
+import 'package:lottie/lottie.dart';
 
 import '../constants/constants.dart';
 
-class AmountCardSection extends StatelessWidget {
+class AmountCardSection extends StatefulWidget {
   const AmountCardSection({super.key});
+
+  @override
+  State<AmountCardSection> createState() => _AmountCardSectionState();
+}
+
+class _AmountCardSectionState extends State<AmountCardSection>
+    with TickerProviderStateMixin {
+  late final AnimationController _controller;
+
+  @override
+  void initState() {
+    _controller = AnimationController(vsync: this);
+    super.initState();
+  }
+
+  @override
+  void dispose() {
+    _controller.dispose();
+    super.dispose();
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -65,9 +86,17 @@ class AmountCardSection extends StatelessWidget {
             ),
           ),
           Positioned(
-            bottom: 20,
-            right: 6,
-            child: Image.asset("assets/coin_stack.png"),
+            bottom: -5,
+            right: -70,
+            child: Lottie.asset(
+              "assets/coin_stack.json",
+              width: 250,
+              height: 150,
+              onLoaded: (composition) {
+                _controller.duration = composition.duration +
+                    const Duration(seconds: 5); // Forward by 5 seconds
+              },
+            ),
           ),
           Positioned(
             bottom: 12,

@@ -4,6 +4,7 @@ import 'package:crypto_wallet/widget/custom_app_bar.dart';
 import 'package:crypto_wallet/widget/amount_card_section.dart';
 import 'package:crypto_wallet/widget/top_movers_section.dart';
 import 'package:flutter/material.dart';
+import 'package:curved_navigation_bar/curved_navigation_bar.dart';
 
 void main() {
   runApp(const MyApp());
@@ -33,6 +34,8 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
+  int currentPageIndex = 2;
+  final GlobalKey<CurvedNavigationBarState> _bottomNavigationKey = GlobalKey();
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -53,6 +56,42 @@ class _MyHomePageState extends State<MyHomePage> {
           ),
         ),
       ),
+      bottomNavigationBar: CurvedNavigationBar(
+        key: _bottomNavigationKey,
+        buttonBackgroundColor: ColorsManager.darkPurple,
+        backgroundColor: ColorsManager.white,
+        color: ColorsManager.darkPurple,
+        items: [
+          Image.asset("assets/Home.png"),
+          Image.asset("assets/wallet.png"),
+          const SizedBox(
+            child: Text(""),
+          ),
+          Image.asset("assets/market.png"),
+          Image.asset("assets/setting.png"),
+        ],
+        index: currentPageIndex,
+        letIndexChange: (index) => true,
+        onTap: (index) {
+          currentPageIndex = index;
+        },
+      ),
+      floatingActionButton: SizedBox(
+        height: 70,
+        width: 70,
+        child: FloatingActionButton(
+          shape:
+              RoundedRectangleBorder(borderRadius: BorderRadius.circular(100)),
+          onPressed: () {
+            final CurvedNavigationBarState? navBarState =
+                _bottomNavigationKey.currentState;
+            navBarState?.setPage(2);
+          },
+          backgroundColor: ColorsManager.mediumPurple,
+          child: Image.asset("assets/swap-fill.png"),
+        ),
+      ),
+      floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
     );
   }
 }
