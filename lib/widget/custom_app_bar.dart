@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import '../constants/constants.dart';
+import '../constants/font_helper.dart';
 
 class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
   const CustomAppBar({super.key});
@@ -14,16 +15,10 @@ class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
       title: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
-          const Column(
+          Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              Text(
-                "Hello Dev",
-                style: TextStyle(
-                  color: ColorsManager.pink,
-                  fontSize: 24,
-                ),
-              ),
+              Text("Hello Dev", style: FontHelper.font16Regular),
               Text(
                 "Welcome Back",
                 style: TextStyle(
