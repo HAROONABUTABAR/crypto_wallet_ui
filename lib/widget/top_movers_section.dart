@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 
 import '../constants/constants.dart';
+import '../constants/font_helper.dart';
 
 class TopMoversSection extends StatelessWidget {
   const TopMoversSection({super.key});
@@ -14,9 +15,9 @@ class TopMoversSection extends StatelessWidget {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          const Text(
+          Text(
             "Top Movers",
-            style: TextStyle(
+            style: FontHelper.font20BoldWhite.copyWith(
               color: ColorsManager.black,
               fontSize: 24,
               fontWeight: FontWeight.bold,
@@ -38,13 +39,13 @@ class TopMoversSection extends StatelessWidget {
                   ),
                   child: Stack(
                     children: [
-                      const Column(
+                      Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                         children: [
                           Text(
                             "+64.98%",
-                            style: TextStyle(
+                            style: FontHelper.font16Regular.copyWith(
                               color: ColorsManager.black,
                               fontSize: 16,
                               fontWeight: FontWeight.bold,
@@ -52,7 +53,7 @@ class TopMoversSection extends StatelessWidget {
                           ),
                           Text(
                             "BTC \$60.58",
-                            style: TextStyle(
+                            style: FontHelper.font16Regular.copyWith(
                               color: ColorsManager.black,
                               fontSize: 16,
                               fontWeight: FontWeight.bold,
@@ -77,13 +78,13 @@ class TopMoversSection extends StatelessWidget {
                     ),
                     child: Stack(
                       children: [
-                        const Column(
+                        Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
                           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                           children: [
                             Text(
                               "+20.98%",
-                              style: TextStyle(
+                              style: FontHelper.font16Regular.copyWith(
                                 color: ColorsManager.black,
                                 fontSize: 16,
                                 fontWeight: FontWeight.bold,
@@ -91,7 +92,7 @@ class TopMoversSection extends StatelessWidget {
                             ),
                             Text(
                               "BTC \$10.58",
-                              style: TextStyle(
+                              style: FontHelper.font16Regular.copyWith(
                                 color: ColorsManager.black,
                                 fontSize: 16,
                                 fontWeight: FontWeight.bold,

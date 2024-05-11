@@ -3,21 +3,21 @@ import 'package:google_fonts/google_fonts.dart';
 
 class FontHelper {
   // Edu NSW ACT Foundation
-  static TextStyle font18BoldWhite = GoogleFonts.eduNswActFoundation(
-      fontSize: 18, fontWeight: FontWeight.bold, color: Colors.white);
+  static TextStyle font20BoldWhite = GoogleFonts.robotoMono(
+      fontSize: 20, fontWeight: FontWeight.bold, color: Colors.white);
 
-  static TextStyle font18GreyW300 = GoogleFonts.eduNswActFoundation(
+  static TextStyle font18GreyW300 = GoogleFonts.robotoMono(
       fontSize: 18, fontWeight: FontWeight.w300, color: Colors.grey);
 
-  static TextStyle font16Regular = GoogleFonts.eduNswActFoundation(
-      fontSize: 16, fontWeight: FontWeight.normal);
+  static TextStyle font16Regular =
+      GoogleFonts.robotoMono(fontSize: 16, fontWeight: FontWeight.normal);
 
-  static TextStyle font18Medium = GoogleFonts.eduNswActFoundation(
-      fontSize: 18, fontWeight: FontWeight.w500);
+  static TextStyle font18Medium =
+      GoogleFonts.robotoMono(fontSize: 18, fontWeight: FontWeight.w500);
 
-  static TextStyle font28SemiBoldWhite = GoogleFonts.eduNswActFoundation(
+  static TextStyle font28SemiBoldWhite = GoogleFonts.robotoMono(
       fontSize: 28, fontWeight: FontWeight.w600, color: Colors.white);
 
-  static TextStyle font24ExtraBold = GoogleFonts.eduNswActFoundation(
-      fontSize: 24, fontWeight: FontWeight.w800);
+  static TextStyle font36ExtraBold =
+      GoogleFonts.robotoMono(fontSize: 36, fontWeight: FontWeight.w800);
 }

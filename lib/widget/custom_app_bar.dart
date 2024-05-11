@@ -1,7 +1,7 @@
+import 'package:crypto_wallet/constants/font_helper.dart';
 import 'package:flutter/material.dart';
 
 import '../constants/constants.dart';
-import '../constants/font_helper.dart';
 
 class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
   const CustomAppBar({super.key});
@@ -18,10 +18,16 @@ class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
           Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              Text("Hello Dev", style: FontHelper.font16Regular),
+              Text(
+                "Hello Dev",
+                style: FontHelper.font28SemiBoldWhite.copyWith(
+                  color: ColorsManager.pink,
+                  fontSize: 24,
+                ),
+              ),
               Text(
                 "Welcome Back",
-                style: TextStyle(
+                style: FontHelper.font36ExtraBold.copyWith(
                   color: ColorsManager.black,
                   fontSize: 32,
                 ),

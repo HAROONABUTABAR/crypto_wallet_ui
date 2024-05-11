@@ -1,3 +1,4 @@
+import 'package:crypto_wallet/constants/font_helper.dart';
 import 'package:flutter/material.dart';
 
 import '../constants/constants.dart';
@@ -12,9 +13,9 @@ class ActionSection extends StatelessWidget {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          const Text(
+          Text(
             "Action",
-            style: TextStyle(
+            style: FontHelper.font20BoldWhite.copyWith(
               color: ColorsManager.black,
               fontSize: 24,
               fontWeight: FontWeight.bold,
@@ -51,13 +52,9 @@ class ActionSection extends StatelessWidget {
                       child: Row(
                         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                         children: [
-                          const Text(
+                          Text(
                             "Receive",
-                            style: TextStyle(
-                              color: ColorsManager.white,
-                              fontSize: 20,
-                              fontWeight: FontWeight.bold,
-                            ),
+                            style: FontHelper.font20BoldWhite,
                           ),
                           Image.asset("assets/arrow_icon.png")
                         ],
@@ -100,13 +97,9 @@ class ActionSection extends StatelessWidget {
                       child: Row(
                         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                         children: [
-                          const Text(
+                          Text(
                             "Receive",
-                            style: TextStyle(
-                              color: ColorsManager.white,
-                              fontSize: 20,
-                              fontWeight: FontWeight.bold,
-                            ),
+                            style: FontHelper.font20BoldWhite,
                           ),
                           Image.asset("assets/arrow_icon.png")
                         ],

@@ -1,3 +1,4 @@
+import 'package:crypto_wallet/constants/font_helper.dart';
 import 'package:flutter/material.dart';
 import 'package:lottie/lottie.dart';
 
@@ -55,16 +56,15 @@ class _AmountCardSectionState extends State<AmountCardSection>
                       ColorsManager.lightPurple,
                     ],
                   )),
-              child: const Stack(
+              child: Stack(
                 children: [
                   Positioned(
                     top: 20,
                     left: 20,
                     child: Text(
                       "8.70% Today,",
-                      style: TextStyle(
+                      style: FontHelper.font20BoldWhite.copyWith(
                         color: ColorsManager.white,
-                        fontSize: 16,
                       ),
                     ),
                   ),
@@ -73,10 +73,8 @@ class _AmountCardSectionState extends State<AmountCardSection>
                     left: 20,
                     child: Text(
                       "\$400,670.90",
-                      style: TextStyle(
+                      style: FontHelper.font36ExtraBold.copyWith(
                         color: ColorsManager.white,
-                        fontSize: 36,
-                        fontWeight: FontWeight.bold,
                       ),
                     ),
                   ),
